@@ -1,0 +1,7 @@
+syntax = "proto3";
+package nlgcoin.multisig;
+
+option go_package = "nlgcoin/x/multisig/types";
+
+// Msg defines the Msg service.
+service Msg {}

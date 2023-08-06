@@ -1,0 +1,12 @@
+syntax = "proto3";
+package nlgcoin.nlgcoin;
+
+import "gogoproto/gogo.proto";
+import "nlgcoin/nlgcoin/params.proto";
+
+option go_package = "nlgcoin/x/nlgcoin/types";
+
+// GenesisState defines the nlgcoin module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

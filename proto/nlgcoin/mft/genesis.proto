@@ -1,0 +1,12 @@
+syntax = "proto3";
+package nlgcoin.mft;
+
+import "gogoproto/gogo.proto";
+import "nlgcoin/mft/params.proto";
+
+option go_package = "nlgcoin/x/mft/types";
+
+// GenesisState defines the mft module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

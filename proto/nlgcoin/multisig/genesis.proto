@@ -1,0 +1,12 @@
+syntax = "proto3";
+package nlgcoin.multisig;
+
+import "gogoproto/gogo.proto";
+import "nlgcoin/multisig/params.proto";
+
+option go_package = "nlgcoin/x/multisig/types";
+
+// GenesisState defines the multisig module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

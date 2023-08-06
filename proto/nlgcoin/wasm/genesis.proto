@@ -1,0 +1,12 @@
+syntax = "proto3";
+package nlgcoin.wasm;
+
+import "gogoproto/gogo.proto";
+import "nlgcoin/wasm/params.proto";
+
+option go_package = "nlgcoin/x/wasm/types";
+
+// GenesisState defines the wasm module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package nlgcoin.treasury;
+
+import "gogoproto/gogo.proto";
+import "nlgcoin/treasury/params.proto";
+
+option go_package = "nlgcoin/x/treasury/types";
+
+// GenesisState defines the treasury module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package nlgcoin.nft;
+
+import "gogoproto/gogo.proto";
+import "nlgcoin/nft/params.proto";
+
+option go_package = "nlgcoin/x/nft/types";
+
+// GenesisState defines the nft module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

@@ -1,0 +1,12 @@
+syntax = "proto3";
+package nlgcoin.oracle;
+
+import "gogoproto/gogo.proto";
+import "nlgcoin/oracle/params.proto";
+
+option go_package = "nlgcoin/x/oracle/types";
+
+// GenesisState defines the oracle module's genesis state.
+message GenesisState {
+  Params params = 1 [(gogoproto.nullable) = false];
+}

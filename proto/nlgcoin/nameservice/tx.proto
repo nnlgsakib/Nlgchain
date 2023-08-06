@@ -1,0 +1,7 @@
+syntax = "proto3";
+package nlgcoin.nameservice;
+
+option go_package = "nlgcoin/x/nameservice/types";
+
+// Msg defines the Msg service.
+service Msg {}

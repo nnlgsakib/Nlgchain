@@ -1,0 +1,7 @@
+syntax = "proto3";
+package nlgcoin.nft;
+
+option go_package = "nlgcoin/x/nft/types";
+
+// Msg defines the Msg service.
+service Msg {}
